@@ -1,0 +1,53 @@
+# Local/runtime files
+.env
+.env.*
+!.env.example
+*.local
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+pyspark-library/notebooks/
+
+# Airflow runtime
+airflow-pipeline/logs/
+airflow-pipeline/airflow/logs/
+airflow-pipeline/airflow/credentials
+airflow-pipeline/airflow/airflow.cfg
+airflow-pipeline/airflow/airflow.db
+airflow-pipeline/airflow/webserver_config.py
+
+# dbt
+dbt/.user.yml
+dbt/target/
+dbt/dbt_packages/
+dbt/logs/
+
+# Spark/runtime data
+spark-warehouse/
+metastore_db/
+derby.log
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Codex/session scratch
+.tmp_shared/
